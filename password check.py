@@ -1,15 +1,18 @@
-a = 0
+def authenticate():
+    username = "user13245"
+    password = "pass13245"
+    max_attempts = 3
 
-
-def login(user, password):
-    if user == "username" and password == "password":
-        print("wellcome")
+    for i in range(max_attempts):
+        i_username = input("Enter your username: ")
+        i_password = input("Enter your password: ")
+        if i_username == username and i_password == password:
+            print(f"Welcome {i_username}")
+            break
+        else:
+            print("Wrong username or password, try again!")
     else:
-        global a
-        a += 1
-        if a <= 3:
-            print(f"try again, you enter the username or password {a} wrong")
-            login(input("username: "), input("password: "))
+        print("you have exceeded 3 attempts!")
 
 
-login(input("username: "), input("password: "))
+authenticate()
