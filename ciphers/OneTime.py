@@ -24,5 +24,3 @@ class OneTime:
         result = ''.join(i for i in plain)
 
         return result
-
-

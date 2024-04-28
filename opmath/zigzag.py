@@ -13,5 +13,3 @@ class ZigZag:
         if self.queue:
             return True
         return False
-
-

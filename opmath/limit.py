@@ -8,6 +8,3 @@ def limit(arr, miin=None, maax=None):
         maax = max(arr)
 
     return [y for y in arr if miin < y < maax]
-
-
-

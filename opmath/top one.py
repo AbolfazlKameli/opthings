@@ -13,5 +13,3 @@ def top(arr):
     result = [i for i in values.keys() if values[i] == f_val]
 
     return f"{result} reapeted {f_val} times"
-
-

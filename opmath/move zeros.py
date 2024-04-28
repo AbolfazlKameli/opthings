@@ -8,6 +8,3 @@ def move(arr):
         else:
             result.append(i)
     return f"{result}, zeros: {zeros}"
-
-
-

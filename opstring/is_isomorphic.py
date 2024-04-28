@@ -20,6 +20,3 @@ def is_is(s, t):
             if dict[s[i]] != t[i]:
                 return False
     return True
-
-
-

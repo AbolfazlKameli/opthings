@@ -12,6 +12,3 @@ def binary_search(arr, elm):
             high = mid - 1
 
     return "Not Found!"
-
-
-

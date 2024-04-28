@@ -4,6 +4,3 @@ def rotate(s, k):
         return double_s[k:k + len(s)]
     else:
         return double_s[k - len(s):k]
-
-
-

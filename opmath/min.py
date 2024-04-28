@@ -3,19 +3,17 @@ def remove_min(stack):
     if len(stack) == 0:
         return stack
 
-    min = stack.pop()
-    stack.append(min)
+    minimum = stack.pop()
+    stack.append(minimum)
     for i in range(len(stack)):
         val = stack.pop()
-        if val <= min:
-            min = val
+        if val <= minimum:
+            minimum = val
         storage.append(val)
 
     for i in range(len(storage)):
         val = storage.pop()
-        if val != min:
+        if val != minimum:
             stack.append(val)
 
-    return stack, min
-
-
+    return stack, minimum

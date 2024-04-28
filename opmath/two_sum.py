@@ -9,6 +9,3 @@ def twoSum(nums, target):
             p2 -= 1
         else:
             p1 += 1
-
-
-

@@ -9,6 +9,3 @@ def last_oc(arr, elm):
             low = mid + 1
         else:
             high = mid - 1
-
-
-
