@@ -23,6 +23,3 @@ def selection_sort(array: list) -> list:
         biggest_index = find_biggest(array)
         new_array.append(array.pop(biggest_index))
     return new_array
-
-
-print(selection_sort([5, 3, 6, 2, 10]))
