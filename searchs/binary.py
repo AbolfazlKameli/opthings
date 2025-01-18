@@ -1,14 +1,13 @@
-def binary_search(arr, elm):
-    low, high = 0, len(arr) - 1
-
-    while low <= high:
-        mid = (high + low) // 2
+def binary_search(arr, elm, low, high):
+    if low <= high:
+        mid = (low + high) // 2
         val = arr[mid]
         if val == elm:
-            return mid, arr
+            return mid
         elif val < elm:
             low = mid + 1
+            return binary_search(arr, elm, low, high)
         else:
             high = mid - 1
-
+            return binary_search(arr, elm, low, high)
     return "Not Found!"
